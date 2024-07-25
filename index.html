@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- todo lo de aquí dentro es navegador en formato metadato -->
+    <!-- style siempre se declara en <head> -->
+    <title>Tienda de helados de crema</title>
+    <style>
+      header {
+        background-color: #345245; /* esto es para fondo de texto */
+        color: white; /* esto es el color de la fuente*/
+        text-align: center; /* esto es para centrar el texto */
+        padding-top: 15px; /* margen */
+        padding-bottom: 15px; /* margen */
+      }
+      main {
+        padding: 20px;
+        margin: 20px;
+        background-color: white;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+      }
+      body {
+        background: #f4f4f4;
+      }
+      nav {
+        background-color: #ef5a6f;
+        display: flex;
+        justify-content: center;
+      }
+      nav {
+        a {
+          color: white;
+          padding: 15px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Helados de crema
+        <!-- Ya con esto aparece en el navegador-->
+      </h1>
+    </header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#acerca">Acerca de</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+      <h2>
+        Acerca de nosotros
+        <!-- segundo Head -->
+      </h2>
+      <img
+        width="100"
+        alt="Helados de 'crema'"
+        src="https://cdn-icons-png.flaticon.com/512/5976/5976353.png"
+      />
+      <p>
+        Somos una empresa dedicada a ofrecer los mejores servicios en desarrollo
+        web. Nuestro equipo está comprometido con la calidad y la satisfacción
+        del cliente.
+      </p>
+
+      <h3>Nuestros Servicios</h3>
+      <p>
+        Ofrecemos una amplia gama de servicios, incluyendo diseño web,
+        desarrollo de aplicaciones, y soluciones de marketing digital. Estamos
+        aquí para ayudarte a alcanzar tus objetivos.
+      </p>
+      <h3>Contactanos</h3>
+      <p>
+        Si tienes alguna pregunta o necesitas más información, no dudes en
+        <a href="#">contactarnos</a>. Estamos aquí para ayudarte.
+      </p>
+
+      <!-- IMG se utiliza para añadir imagenes, Width para determinar su tamaño, SRC es necesario para el link -->
+    </main>
+    <!-- esto es todo para usuario -->
+    <footer
+      style="background: #333; color: white; text-align: center; padding: 10px"
+    >
+      <!-- es un pié de pagina. style esto no se hace, mala practica-->
+      <p>&copy; 2024 helados Rico Rico. Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
