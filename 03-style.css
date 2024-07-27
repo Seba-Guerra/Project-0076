@@ -1,0 +1,24 @@
+/*Si tiene puntito al inicio es una clase  Si tiene # al inicio es un id */
+.enlace {
+  font-size: 16 px;
+  text-decoration-line: none;
+}
+.enlace:hover {
+  background-color: #ec3650;
+}
+#titulo {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Pantallas de 350px, 450px 479px */
+  body {
+    background: blue;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Pantallas tipo tablet */
+  body {
+    background: red;
+  }
+}
