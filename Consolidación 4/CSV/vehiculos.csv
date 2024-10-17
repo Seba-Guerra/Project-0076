@@ -1,0 +1,4 @@
+<class 'Vehiculos.Particular'>,{'marca': 'Toyota', 'modelo': '4Runner', 'num_ruedas': 4, 'velocidad': 180, 'cilindraje': 500, 'puestos': 5}
+<class 'Vehiculos.Carga'>,{'marca': 'Toyota', 'modelo': 'Hilux', 'num_ruedas': 10, 'velocidad': 120, 'cilindraje': 1000, 'peso_carga': 20000}
+<class 'Vehiculos.Bicicleta'>,{'marca': 'Bianchi', 'modelo': 'Corsa', 'num_ruedas': 2, 'tipo': 'Mountain'}
+<class 'Vehiculos.Motocicleta'>,{'marca': 'Ninja', 'modelo': '300', 'num_ruedas': 2, 'tipo': 'Deportiva', 'motor': '2T', 'cuadro': 'Doble Viga', 'nro_radios': 21}
