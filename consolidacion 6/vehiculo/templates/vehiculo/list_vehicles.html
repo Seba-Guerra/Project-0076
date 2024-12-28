@@ -1,0 +1,31 @@
+{% extends 'vehiculo/base.html' %} {% block title %}
+  Listado de Vehículos
+{% endblock %} {% block content %}
+  <h1>Listado de Vehículos</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Serial Carrocería</th>
+        <th>Serial Motor</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+        <th>Condición de Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for vehicle in vehicles %}
+        <tr>
+          <td>{{ vehicle.marca }}</td>
+          <td>{{ vehicle.modelo }}</td>
+          <td>{{ vehicle.serial_carroceria }}</td>
+          <td>{{ vehicle.serial_motor }}</td>
+          <td>{{ vehicle.categoria }}</td>
+          <td>{{ vehicle.precio }}</td>
+          <td>{{ vehicle.condicion_precio }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

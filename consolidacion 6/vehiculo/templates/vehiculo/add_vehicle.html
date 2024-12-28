@@ -1,0 +1,8 @@
+{% extends 'vehiculo/base.html' %} {% load crispy_forms_tags %} {% block title
+%} Añadir Vehículo {% endblock %} {% block content %}
+<h1>Añadir Vehículo</h1>
+<form method="post">
+  {% csrf_token %} {{ form|crispy }}
+  <button type="submit" class="btn btn-secondary">Enviar</button>
+</form>
+{% endblock %}
