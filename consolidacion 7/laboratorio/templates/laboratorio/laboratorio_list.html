@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Información de Laboratorios</title>
+    <!-- Agregar Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Información de Laboratorios</h1>
+        <a href="{% url 'laboratorio_create' %}" class="btn btn-success mb-3">Ingresar Laboratorio</a> <!-- Botón Ingresar -->
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for laboratorio in laboratorios %}
+                <tr>
+                    <td>{{ laboratorio.nombre }}</td>
+                    <td>{{ laboratorio.ciudad }}</td>
+                    <td>{{ laboratorio.pais }}</td>
+                    <td><a href="{% url 'laboratorio_update' laboratorio.pk %}" class="btn btn-primary btn-sm">Actualizar</a></td>
+                    <td><a href="{% url 'laboratorio_delete' laboratorio.pk %}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/" class="btn btn-secondary mt-3">Ir a la página de inicio</a>
+        <p>¿Información de los Laboratorios?</p>
+        <div class="visitor-counter">
+            {% if request.session.visits %}
+                <p>Usted ha visitado esta página {{ request.session.visits }} veces.</p>
+            {% else %}
+                <p>Usted ha visitado esta página 1 vez.</p>
+            {% endif %}
+        </div>
+    </div>
+    <!-- Agregar scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+P

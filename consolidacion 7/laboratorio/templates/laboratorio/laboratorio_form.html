@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ingresar Datos del Laboratorio</title>
+    <!-- Agregar Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4">Ingresar información del Laboratorio</h1>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          {{ form.nombre.label_tag }} {{ form.nombre }}
+        </div>
+        <div class="form-group">
+          {{ form.ciudad.label_tag }} {{ form.ciudad }}
+        </div>
+        <div class="form-group">{{ form.pais.label_tag }} {{ form.pais }}</div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <a href="{% url 'laboratorio_list' %}" class="btn btn-secondary mt-3"
+        >Ir a la Información de los Laboratorios</a
+      >
+    </div>
+    <!-- Agregar scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detalle del Laboratorio</title>
+    <!-- Agregar Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4">{{ laboratorio.nombre }}</h1>
+      <p>Ciudad: {{ laboratorio.ciudad }}</p>
+      <p>País: {{ laboratorio.pais }}</p>
+      <a href="{% url 'laboratorio_list' %}" class="btn btn-secondary"
+        >Volver a la Lista</a
+      >
+    </div>
+    <!-- Agregar scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
