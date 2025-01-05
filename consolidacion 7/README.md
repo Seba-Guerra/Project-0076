@@ -1,2 +1,3 @@
-# Proyecto_fabrica_farmaceuticos
- Fabricacion de productos farmaceuticos
+Proyecto consolidación 0076 
+
+Modelu de bases de dato farmaceutico y display de roles en django admin. 
